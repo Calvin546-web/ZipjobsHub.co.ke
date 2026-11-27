@@ -1,0 +1,51 @@
+login.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - ZipJobsHub</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; text-align: center; }
+  header { background: #0a2540; color: white; padding: 40px 20px; }
+  .card { background: white; max-width: 420px; margin: -20px auto 20px; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: left; }
+  input { width: 100%; padding: 12px; margin: 8px 0 14px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+  label { font-weight: bold; font-size: 14px; }
+  .btn { width: 100%; padding: 14px; border: none; border-radius: 8px; background: #0a2540; color: white; font-weight: bold; font-size: 16px; cursor: pointer; }
+  #msg { color: red; font-size: 14px; text-align: center; }
+</style>
+</head>
+<body>
+<header><h1>ZipJobsHub</h1><p>Welcome back!</p></header>
+<div class="card">
+  <h2 style="text-align:center;">Login to Your Account</h2>
+  <form id="loginForm">
+    <label>Email Address</label>
+    <input type="email" id="email" placeholder="you@email.com" required>
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Your password" required>
+    <p id="msg"></p>
+    <button type="submit" class="btn">Login →</button>
+  </form>
+  <p style="text-align:center; font-size:14px;">No account? <a href="index.html"><b>Register Free</b></a></p>
+  <p style="text-align:center; font-size:13px;"><a href="https://oamhash.github.io">← Back to Home</a></p>
+</div>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var email = document.getElementById('email').value;
+  var pass = document.getElementById('password').value;
+  var saved = localStorage.getItem('zip_user_' + email);
+  if(!saved){ document.getElementById('msg').innerText = "No account found with this email. Please register first."; return; }
+  var user = JSON.parse(saved);
+  if(user.pass === pass){
+    localStorage.setItem('zip_logged_in', email);
+    alert("Welcome back, " + user.name + "! Login successful.");
+    window.location.href = "index.html";
+  } else {
+    document.getElementById('msg').innerText = "Wrong password. Try again.";
+  }
+});
+</script>
+</body>
+</html>
