@@ -193,6 +193,57 @@ document.getElementById('applyForm').addEventListener('submit', function(){
 document.getElementById('cvForm').addEventListener('submit', function(){ alert('Thank you! Your CV has been submitted. We will match you to jobs.'); });
 window.onclick = function(e){ if(e.target == document.getElementById('applyModal')) closeModal(); }
 checkStatus();
+<div style="max-width:800px; margin:20px auto; padding:0 15px; text-align:left;">
+  <h2 style="text-align:center;">🔥 Latest Jobs - From GoKazini</h2>
+  <p style="text-align:center; color:#666; font-size:13px;">Source: gokazini.com - Click Apply to view full details on GoKazini</p>
+
+  <!-- JOB 1 -->
+  <div style="background:white; padding:20px; border-radius:12px; margin-bottom:15px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+    <span style="background:#e6f7ee; color:#00a651; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:bold;">OPERATIONS & CUSTOMER SERVICE</span>
+    <h3 style="margin:10px 0 5px;">Specialist, Operations</h3>
+    <p style="color:#666; margin:5px 0;">📍 Kenya • Remote &nbsp; | &nbsp; 💰 USD 471/mo</p>
+    <p>Operations & customer service role, fully remote from Kenya.</p>
+    <a href="https://gokazini.com" target="_blank" style="display:inline-block; background:#0a2540; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Apply on GoKazini →</a>
+  </div>
+
+  <!-- JOB 2 -->
+  <div style="background:white; padding:20px; border-radius:12px; margin-bottom:15px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+    <span style="background:#e6f7ee; color:#00a651; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:bold;">OPERATIONS & CUSTOMER SERVICE</span>
+    <h3 style="margin:10px 0 5px;">Founding Membership & Community Lead</h3>
+    <p style="color:#666; margin:5px 0;">📍 Nairobi, Kenya • On-site &nbsp; | &nbsp; 💰 Est. KES 80,000 - 150,000/mo</p>
+    <p>Lead community & membership growth in Nairobi.</p>
+    <a href="https://gokazini.com" target="_blank" style="display:inline-block; background:#0a2540; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Apply on GoKazini →</a>
+  </div>
+
+  <!-- JOB 3 -->
+  <div style="background:white; padding:20px; border-radius:12px; margin-bottom:15px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+    <span style="background:#fff3d6; color:#8a6d00; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:bold;">SUPPLY CHAIN & LOGISTICS</span>
+    <h3 style="margin:10px 0 5px;">Storekeeper</h3>
+    <p style="color:#666; margin:5px 0;">📍 Tatu City, Kiambu • On-site &nbsp; | &nbsp; 💰 Est. KES 40,000 - 70,000/mo</p>
+    <p>Manage stock, inventory and store records in Tatu City.</p>
+    <a href="https://gokazini.com" target="_blank" style="display:inline-block; background:#0a2540; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Apply on GoKazini →</a>
+  </div>
+
+  <!-- JOB 4 -->
+  <div style="background:white; padding:20px; border-radius:12px; margin-bottom:15px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+    <span style="background:#e6f7ee; color:#00a651; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:bold;">OPERATIONS & CUSTOMER SERVICE</span>
+    <h3 style="margin:10px 0 5px;">Senior Operations Specialist - Remote, Global</h3>
+    <p style="color:#666; margin:5px 0;">📍 Global • Remote &nbsp; | &nbsp; 💰 USD 50,000/yr</p>
+    <p>Senior remote operations role, open globally.</p>
+    <a href="https://gokazini.com" target="_blank" style="display:inline-block; background:#0a2540; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Apply on GoKazini →</a>
+  </div>
+
+  <!-- JOB 5 -->
+  <div style="background:white; padding:20px; border-radius:12px; margin-bottom:15px; box-shadow:0 2px 10px rgba(0,0,0,0.08);">
+    <span style="background:#e3f0ff; color:#0a2540; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:bold;">SKILLED TRADES & GENERAL SERVICES</span>
+    <h3 style="margin:10px 0 5px;">Electrician</h3>
+    <p style="color:#666; margin:5px 0;">📍 Nairobi, Kenya • On-site &nbsp; | &nbsp; 💰 Est. KES 35,000 - 60,000/mo</p>
+    <p>Electrical installation, repair & maintenance in Nairobi.</p>
+    <a href="https://gokazini.com" target="_blank" style="display:inline-block; background:#0a2540; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Apply on GoKazini →</a>
+  </div>
+
+</div>
+</footer>
 </script>
 </body>
 </html>
